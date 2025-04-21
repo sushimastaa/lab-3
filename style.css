@@ -17,7 +17,7 @@
 body {
   font-family: 'Segoe UI', sans-serif;
   background-color: var(--bg-color);
-  background-image: url('1.jpg');
+  background-image: url('2.jpg');
   background-size: cover;
   color: var(--text);
   line-height: 1.6;
@@ -25,7 +25,7 @@ body {
 
 header {
   background-color: var(--primary);
-  color: #fff;
+  color: #1ae8bc;
   padding: 2rem;
   text-align: center;
   border-bottom-left-radius: 40px;
