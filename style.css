@@ -88,3 +88,35 @@ footer {
   border-top-right-radius: 40px;
   margin-top: 2rem;
 }
+.campus-images {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.campus-images img {
+  width: 100%;
+  height: 200px; 
+  object-fit: cover; 
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+  transition: transform 0.3s ease;
+}
+
+.campus-images img:hover {
+  transform: scale(1.05); 
+}
+
+.campus-description {
+  text-align: center;
+  margin-top: 10px;
+  color: var(--text);
+  font-size: 1.1rem;
+}
+
+.campus-description h3 {
+  color: var(--primary);
+  font-size: 1.5rem;
+}
+
