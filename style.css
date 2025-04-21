@@ -64,13 +64,15 @@
     box-shadow: 0 4px 8px var(--shadow);
   }
   
-  footer {
+  .profile-picture {
     text-align: center;
-    padding: 1rem;
-    background-color: var(--primary);
-    color: white;
-    border-top-left-radius: 40px;
-    border-top-right-radius: 40px;
-    margin-top: 4rem;
+    margin: 2rem 0;
   }
   
+  .profile-picture img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    box-shadow: 0 4px 12px var(--shadow);
+  }
