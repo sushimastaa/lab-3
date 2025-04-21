@@ -1,79 +1,162 @@
 :root {
-    --bg-color: #fef9f4;
-    --primary: #a8dadc;
-    --secondary: #ffe5ec;
-    --accent: #ffd6a5;
-    --text: #444;
-    --card-bg: #ffffff;
-    --shadow: rgba(0, 0, 0, 0.1);
-  }
-  
-  * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  
-  body {
-    font-family: 'Segoe UI', sans-serif;
-    background-color: var(--bg-color);
-    background-image: url(cutebackground.avif);
-    color: var(--text);
-    line-height: 1.6;
-  }
-  
-  header {
-    background-color: var(--primary);
-    color: #fff;
-    padding: 2rem;
-    text-align: center;
-    border-bottom-left-radius: 40px;
-    border-bottom-right-radius: 40px;
-    box-shadow: 0 4px 12px var(--shadow);
-  }
-  
-  nav {
-    display: flex;
-    justify-content: center;
-    margin: 3rem 0;
-    gap: 2rem;
-    flex-wrap: wrap;
-  }
-  
-  a {
-    text-decoration: none;
-    background-color: var(--secondary);
-    padding: 1rem 2rem;
-    border-radius: 20px;
-    color: #444;
-    font-weight: bold;
-    box-shadow: 0 4px 8px var(--shadow);
-    transition: 0.3s ease;
-  }
-  
-  a:hover {
-    background-color: var(--accent);
-    transform: translateY(-5px);
-  }
-  
-  main {
-    max-width: 800px;
-    margin: 2rem auto;
-    padding: 2rem;
-    background-color: var(--card-bg);
-    border-radius: 20px;
-    box-shadow: 0 4px 8px var(--shadow);
-  }
-  
-  .profile-picture {
-    text-align: center;
-    margin: 2rem 0;
-  }
-  
-  .profile-picture img {
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    box-shadow: 0 4px 12px var(--shadow);
-  }
+  --bg-color: #fef9f4;
+  --primary: #a8dadc;
+  --secondary: #ffe5ec;
+  --accent: #ffd6a5;
+  --text: #444;
+  --card-bg: #ffffff;
+  --shadow: rgba(0, 0, 0, 0.1);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--bg-color);
+  background-image: url('cutebackground.avif');
+  background-size: cover;
+  color: var(--text);
+  line-height: 1.6;
+}
+
+header {
+  background-color: var(--primary);
+  color: #fff;
+  padding: 2rem;
+  text-align: center;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  box-shadow: 0 4px 12px var(--shadow);
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  margin: 3rem 0;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+a {
+  text-decoration: none;
+  background-color: var(--secondary);
+  padding: 1rem 2rem;
+  border-radius: 20px;
+  color: #444;
+  font-weight: bold;
+  box-shadow: 0 4px 8px var(--shadow);
+  transition: 0.3s ease;
+}
+
+a:hover {
+  background-color: var(--accent);
+  transform: translateY(-5px);
+}
+
+main {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: var(--card-bg);
+  border-radius: 20px;
+  box-shadow: 0 4px 8px var(--shadow);
+}
+
+.profile-picture {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.profile-picture img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px var(--shadow);
+}
+
+h2 {
+  color: var(--primary);
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+p {
+  font-size: 1.1rem;
+  color: var(--text);
+  margin-top: 0.5rem;
+}
+
+h1 {
+  color: var(--primary);
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Hobby and Activity Sections */
+.hobby, .activity {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+  gap: 1rem;
+}
+
+.hobby-image, .activity-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 12px var(--shadow);
+  transition: transform 0.3s ease;
+}
+
+.hobby-image:hover, .activity-image:hover {
+  transform: scale(1.1);
+}
+
+.hobby, .activity {
+  background-color: var(--card-bg);
+  padding: 1rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px var(--shadow);
+}
+
+.hobby p, .activity p {
+  font-size: 1.1rem;
+  color: var(--text);
+  margin-top: 0.5rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+  text-align: center;
+  color: var(--primary);
+  margin-bottom: 2rem;
+}
+
+/* Header Styling for Navigation */
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--primary);
+}
+
+nav a {
+  font-size: 1rem;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  border-radius: 20px;
+  color: #444;
+  font-weight: bold;
+  box-shadow: 0 4px 8px var(--shadow);
+}
+
+nav a:hover {
+  background-color: var(--accent);
+  transform: translateY(-5px);
+}
