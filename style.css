@@ -1,0 +1,76 @@
+:root {
+    --bg-color: #fef9f4;
+    --primary: #a8dadc;
+    --secondary: #ffe5ec;
+    --accent: #ffd6a5;
+    --text: #444;
+    --card-bg: #ffffff;
+    --shadow: rgba(0, 0, 0, 0.1);
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text);
+    line-height: 1.6;
+  }
+  
+  header {
+    background-color: var(--primary);
+    color: #fff;
+    padding: 2rem;
+    text-align: center;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    box-shadow: 0 4px 12px var(--shadow);
+  }
+  
+  nav {
+    display: flex;
+    justify-content: center;
+    margin: 3rem 0;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  a {
+    text-decoration: none;
+    background-color: var(--secondary);
+    padding: 1rem 2rem;
+    border-radius: 20px;
+    color: #444;
+    font-weight: bold;
+    box-shadow: 0 4px 8px var(--shadow);
+    transition: 0.3s ease;
+  }
+  
+  a:hover {
+    background-color: var(--accent);
+    transform: translateY(-5px);
+  }
+  
+  main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: var(--card-bg);
+    border-radius: 20px;
+    box-shadow: 0 4px 8px var(--shadow);
+  }
+  
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--primary);
+    color: white;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    margin-top: 4rem;
+  }
+  
